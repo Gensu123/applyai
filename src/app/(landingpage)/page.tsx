@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { IoIosMenu, IoIosClose } from 'react-icons/io';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
+import HeroSection from './heroSection';
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -13,6 +14,7 @@ const Navbar = () => {
 
     return (
         <div className="mx-auto px-4 sm:px-6 lg:px-8">
+          
             <nav className="flex justify-between items-center h-16 border-b border-gray-200">
                          <Image src="/Logo.png" height={120} width={120} alt="logo" />
 
@@ -22,7 +24,7 @@ const Navbar = () => {
                     </button>
                 </div>
 
-                <div className="hidden md:flex justify-center flex-1 mx-8 ml-20">
+                <div className="hidden md:flex justify-center flex-1 mr-8 ">
                     <Link href="/" className="text-gray-700 hover:text-black mx-8">Home</Link>
                     <Link href="/about" className="text-gray-700 hover:text-black mx-8">About</Link>
                     <Link href="/services" className="text-gray-700 hover:text-black mx-8">Services</Link>
@@ -44,7 +46,11 @@ const Navbar = () => {
                     <Link href="/contact" className="block px-4 py-2 text-lg hover:underline">Contact</Link>
                 </div>
             )}
+             <HeroSection />
         </div>
+
+        
+        
     );
 };
 
