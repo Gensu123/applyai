@@ -1,32 +1,51 @@
-import Logo from "./logo";
-import Navigation from "./navigation";
-import Loginbutton from "./loginbutton";
-
+"use client"
+import { useState } from 'react';
+import Link from 'next/link';
+import { IoIosMenu, IoIosClose } from 'react-icons/io';
+import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 const Navbar = () => {
-  return (
-<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="flex justify-between items-center h-16">
-        <div className="flex-shrink-0">
-            <a href="/" className="text-black">Logo</a>
-        </div>
-        <div className="flex-grow">
-            <ul className="hidden md:flex justify-center list-none space-x-4">
-                <li><a href="/" className="hover:underline">Home</a></li>
-                <li><a href="/about" className="hover:underline">About</a></li>
-                <li><a href="/services" className="hover:underline">Services</a></li>
-                <li><a href="/contact" className="hover:underline">Contact</a></li>
-            </ul>
-        </div>
-        <div className="hidden md:block">
-            <a href="/signin" className="text-black hover:underline">Sign in</a>
-        </div>
-    </div>
-</div>
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
 
+    return (
+        <div className="mx-auto px-4 sm:px-6 lg:px-8">
+            <nav className="flex justify-between items-center h-16 border-b border-gray-200">
+                         <Image src="/Logo.png" height={120} width={120} alt="logo" />
 
-                
+                <div className="md:hidden">
+                    <button onClick={toggleMenu} className="p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700">
+                        {isMenuOpen ? <IoIosClose size="28" /> : <IoIosMenu size="28" />}
+                    </button>
+                </div>
+
+                <div className="hidden md:flex justify-center flex-1 mx-8 ml-20">
+                    <Link href="/" className="text-gray-700 hover:text-black mx-8">Home</Link>
+                    <Link href="/about" className="text-gray-700 hover:text-black mx-8">About</Link>
+                    <Link href="/services" className="text-gray-700 hover:text-black mx-8">Services</Link>
+                    <Link href="/contact" className="text-gray-700 hover:text-black mx-8">Contact</Link>
+                </div>
+
+                <div className="hidden md:block shrink-0">
+                    <Link href="/sign-in">
+                        <Button className="bg-[#5422DD] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Sign in</Button>
+                    </Link>
+                </div>
+            </nav>
+
+            {isMenuOpen && (
+                <div className="absolute right-0 mt-2 py-2 w-48 bg-white rounded-lg shadow-xl md:hidden">
+                    <Link href="/" className="block px-4 py-2 text-lg hover:underline">Home</Link>
+                    <Link href="/about" className="block px-4 py-2 text-lg hover:underline">About</Link>
+                    <Link href="/services" className="block px-4 py-2 text-lg hover:underline">Services</Link>
+                    <Link href="/contact" className="block px-4 py-2 text-lg hover:underline">Contact</Link>
+                </div>
+            )}
+        </div>
     );
-}
+};
 
 export default Navbar;
