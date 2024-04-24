@@ -1,6 +1,10 @@
 // HeroSection.js
 import Image from 'next/image';
 import centralImage from '../../../public/Hero.png'; // Update with the path to your image file
+import { motion } from 'framer-motion';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Tilt from 'react-parallax-tilt';
 
 const HeroSection = () => {
   return (
@@ -28,19 +32,20 @@ const HeroSection = () => {
       <button className="bg-[#5724E1] text-white font-semibold px-6 py-2 rounded-lg hover:bg-blue-300 transition duration-300">
         Get It Now
       </button> 
-      <div className="mt-10 ">
-        {/* Set the width and height properties as needed */}
-        <Image 
-          
-          src={centralImage} 
-          alt="Job Recommendations" 
-          width={900}  // Desired width
-          height={718} // Desired height
-          objectFit="contain" // This will ensure that the image is scaled correctly
-          className="rounded-xl shadow-xl"
-        />
+      <div className="mt-10">
+        {/* Wrap the Image component with Tilt for the parallax effect */}
+        <Tilt>
+          <div className="rounded-xl shadow-xl overflow-hidden"> {/* Overflow hidden for maintaining the rounded corners */}
+            <Image
+              src={centralImage}
+              alt="Job Recommendations"
+              width={900}  // Desired width
+              height={718} // Desired height
+              objectFit="contain" // This will ensure that the image is scaled correctly
+            />
+          </div>
+        </Tilt>
       </div>
-      {/* More content goes here */}
     </div>
   );
 };
