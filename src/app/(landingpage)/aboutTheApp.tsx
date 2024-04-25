@@ -13,16 +13,17 @@ const AboutTheApp = () => {
       <div className="container mx-auto p-20 flex flex-col lg:flex-row items-center justify-between  ">
         
         <Tilt>
-        <div className="flex flex-row items-center">
+        <div className="flex flex-s items-center">
             
-          <div className="p-4 bg-gray-200 rounded-full mt-40 mr-[40px] z-20 ">Icon1</div>
           {/* Square Card behind progress circle */}
          
           <div className="relative flex justify-center items-center">
+
             {/* Card */}
-            <div className="absolute w-80 h-80 bg-white shadow-xl rounded-3xl z-0"></div>
+            <div className="absolute w-80 h-80 bg-white shadow-xl rounded-3xl z-10"></div>
             {/* Progress circle */}
-            <div className="relative w-80 h-80 z-10">
+            <div className="relative w-80 h-80 z-20">
+              
       <svg className="w-full h-full" viewBox="0 0 100 100">
         {/* Define the gradient */}
         <defs>
@@ -63,10 +64,14 @@ const AboutTheApp = () => {
       </svg>
       <div className='justify-center text-center'>Job Matching your skills</div>
     </div>
-
+   <div className='flex-shrink'>
+    <div className="absolute p-4 bg-gray-200 rounded-md left-4 top-3/4 transform -translate-y-2 -translate-x-full z-30 w-[80px] h-[80px] flex items-center justify-center text-center">Icon1</div>
+    <div className="absolute p-4 bg-gray-200 rounded-md top-0 right-0 transform translate-x-1/2 -translate-y-1/2 z-30 w-[80px] h-[80px]  flex items-center justify-center text-center">
+  Icon1
+</div> 
+</div>  
           </div>
       
-          <div className="p-4 shadow-lg bg-gray-200 rounded-full ml-10 mb-40 z-20">Icon2</div>
         </div>
          </Tilt>
   
