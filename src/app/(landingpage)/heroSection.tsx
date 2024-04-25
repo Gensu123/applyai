@@ -8,13 +8,13 @@ import Tilt from 'react-parallax-tilt';
 
 const HeroSection = () => {
   return (
-    <div className=" flex flex-col items-center justify-center text-black    py-10">
+    <div className="  flex flex-col items-center justify-center text-black    py-20">
         <div className="flex justify-center items-center text-purple-800 mb-4">
         Your Perfect Career Match Awaits
         </div>
       <h1 className="text-6xl font-bold mb-4">
         Unlock Your Dream Job with 
-        <div className="text-6xl font-bold mb-4 relative inline-block  font-semibold">
+        <div className="text-6xl mb-4 relative inline-block  font-semibold">
                 ApplyAI
                 {/* Inline SVG for the scribble line */}
                 <div>

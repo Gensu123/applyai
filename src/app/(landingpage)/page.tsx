@@ -5,6 +5,9 @@ import { IoIosMenu, IoIosClose } from 'react-icons/io';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import HeroSection from './heroSection';
+import AboutTheApp from './aboutTheApp';
+import AppFeatures from './appFeatures';
+
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -13,7 +16,15 @@ const Navbar = () => {
     };
 
     return (
-        <div className="mx-auto px-4 sm:px-6 lg:px-8">
+    <div className= "relative min-h-screen">
+        <div className="absolute inset-0 -z-10 h-full w-full bg-purple bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:10rem_4rem]">
+        <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_350px_at_100%_300px,rgba(213,197,255,.25),transparent)]">
+        <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_350px_at_10%_200px,rgba(186,255,236,.25),transparent)]">
+        <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_350px_at_10%_800px,rgba(244,233,193,.5),transparent)]">
+        <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_350px_at_100%_800px,rgba(194,244,230,.25),transparent)]">
+
+            
+        <div className="mx-auto px-4 sm:px-6 lg:px-8 bg">
           
             <nav className="flex justify-between items-center h-16 border-b border-gray-200">
                          <Image src="/Logo.png" height={120} width={120} alt="logo" />
@@ -45,12 +56,21 @@ const Navbar = () => {
                     <Link href="/services" className="block px-4 py-2 text-lg hover:underline">Services</Link>
                     <Link href="/contact" className="block px-4 py-2 text-lg hover:underline">Contact</Link>
                 </div>
+                
             )}
-             <HeroSection />
+              <div className="relative z-10">
+       
+      </div>
         </div>
-
-        
-        
+        </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    <HeroSection />
+    <AboutTheApp />
+    <AppFeatures />
+        </div>
     );
 };
 
