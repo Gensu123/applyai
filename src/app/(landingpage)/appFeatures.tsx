@@ -2,11 +2,12 @@ import Image from 'next/image';
 import { IoBriefcaseOutline } from "react-icons/io5";
 import { FaFileInvoice } from "react-icons/fa";
 import { MdOutlineComputer } from "react-icons/md";
+import { FaUserGroup } from "react-icons/fa6";
 
 const AppFeatures = () => {
     return (
-        <div className="py-12 bg-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className=" pb-60">
+            <div className="max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8">
                 <h1 className="text-3xl font-bold text-center mb-8">App Features</h1>
                 <div className="flex flex-wrap justify-center gap-4 md:flex-row">
                     {/* Personalized Job Matching */}

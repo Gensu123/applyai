@@ -1,8 +1,11 @@
 
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import { FaUserGroup } from 'react-icons/fa6';
 import Tilt from 'react-parallax-tilt';
+import { SiSimpleanalytics } from "react-icons/si";
 
+  
 const AboutTheApp = () => {
     const progress = 76;
   const radius = 40; // The radius of the circle
@@ -10,7 +13,7 @@ const AboutTheApp = () => {
   const offset = circumference - (progress / 100) * circumference; 
     return (
         
-      <div className="container mx-auto p-20 flex flex-col lg:flex-row items-center justify-between  ">
+      <div className="container mx-auto p-40 pl-60 pb-60 flex flex-col lg:flex-row items-center justify-between  ">
         
         <Tilt>
         <div className="flex flex-s items-center">
@@ -65,9 +68,8 @@ const AboutTheApp = () => {
       <div className='justify-center text-center'>Job Matching your skills</div>
     </div>
    <div className='flex-shrink'>
-    <div className="absolute p-4 bg-gray-200 rounded-md left-4 top-3/4 transform -translate-y-2 -translate-x-full z-30 w-[80px] h-[80px] flex items-center justify-center text-center">Icon1</div>
-    <div className="absolute p-4 bg-gray-200 rounded-md top-0 right-0 transform translate-x-1/2 -translate-y-1/2 z-30 w-[80px] h-[80px]  flex items-center justify-center text-center">
-  Icon1
+    <div className="absolute p-4 bg-purple-500 rounded-md left-4 top-3/4 transform -translate-y-2 -translate-x-full z-30 w-[80px] h-[80px] flex items-center justify-center text-center "><FaUserGroup size={40} color='white'/></div>
+    <div className="absolute p-4 bg-purple-500 rounded-md top-0 right-0 transform translate-x-1/2 -translate-y-1/2 z-30 w-[80px] h-[80px]  flex items-center justify-center text-center"><SiSimpleanalytics size={40}  color = 'white'/>
 </div> 
 </div>  
           </div>

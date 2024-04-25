@@ -5,16 +5,17 @@ import { motion } from 'framer-motion';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Tilt from 'react-parallax-tilt';
+import Typewriter from 'typewriter-effect'; 
+
 
 const HeroSection = () => {
   return (
-    <div className="  flex flex-col items-center justify-center text-black    py-20">
-        <div className="flex justify-center items-center text-purple-800 mb-4">
-        Your Perfect Career Match Awaits
-        </div>
-      <h1 className="text-5xl font-bold mb-4">
+    <div className="  flex flex-col items-center justify-center text-black py-20 ">
+        
+        
+      <h1 className="text-5xl font-bold mb-4 ">
         Unlock Your Dream Job with 
-        <div className="text-6xl font-bold mb-4 relative inline-block  font-semibold">
+        <div className="text-6xl font-bold mb-4 relative inline-block">
                 ApplyAI
                 {/* Inline SVG for the scribble line */}
                 <div >
@@ -29,20 +30,20 @@ const HeroSection = () => {
       <p className="text-gray-500 mb-6">
         Streamline Your Job Search Effortlessly and Land Your Ideal Role Faster
       </p>
-      <button className="bg-[#5724E1] text-white font-semibold px-6 py-2 rounded-lg hover:bg-blue-300 transition duration-300">
+      <button className="bg-[#5724E1] text-white font-semibold px-6 py-2 rounded-lg hover:bg-blue-300 transition duration-2000 animate-bounce focus:animate-none hover:animate-none inline-flex text-md  mt-3 tracking-wide ">
         Get It Now
       </button> 
       <div className="mt-10">
         {/* Wrap the Image component with Tilt for the parallax effect */}
         <Tilt>
-          <div className="rounded-xl shadow-xl overflow-hidden"> {/* Overflow hidden for maintaining the rounded corners */}
+          <div className="rounded-xl shadow-xl overflow-hidden "> {/* Overflow hidden for maintaining the rounded corners */}
             <Image
               src={centralImage}
               alt="Job Recommendations"
-              width={800}  // Desired width
-              height={800} // Desired height
+              width={700}  // Desired width
+              height={700} // Desired height
               objectFit="contain"
-              className="rounded-xl shadow-xl " // This will ensure that the image is scaled correctly
+              className="rounded-xl shadow-2xl " // This will ensure that the image is scaled correctly
                // This will ensure that the image is scaled correctly
             />
           </div>
