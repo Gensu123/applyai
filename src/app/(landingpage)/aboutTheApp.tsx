@@ -13,7 +13,7 @@ const AboutTheApp = () => {
   const offset = circumference - (progress / 100) * circumference; 
     return (
         
-      <div className="container mx-auto p-40 pl-60 pb-60 flex flex-col lg:flex-row items-center justify-between  ">
+      <div className="container mx-auto p-44 flex flex-col lg:flex-row items-center justify-between  ">
         
         <Tilt>
         <div className="flex flex-s items-center">

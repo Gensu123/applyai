@@ -20,7 +20,7 @@ const Navbar = () => {
     };
 
     return (
-    <div className= "relative min-h-screen  ">
+    <div className= "relative min-h-screen    ">
         <div className="absolute inset-0 h-full w-full bg-purple bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:10rem_4rem] z-0"></div>
         <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_350px_at_100%_300px,rgba(213,197,255,.25),transparent)]">
         <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_350px_at_10%_200px,rgba(186,255,236,.25),transparent)]">
@@ -28,7 +28,7 @@ const Navbar = () => {
         <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_350px_at_100%_800px,rgba(194,244,230,.25),transparent)]">
 
             
-        <div className="mx-auto py-4 px-4 sm:px-6 lg:px-8 z-10 relative">
+        <div className="mx-auto h-18 px-4 sm:px-6 lg:px-8 z-10 fixed w-full bg-gray-50">
             <nav className="flex justify-between items-center h-16 border-b border-gray-200">
                          <Image src="/Logo.png" height={120} width={120} alt="logo" />
 
@@ -39,10 +39,12 @@ const Navbar = () => {
                 </div>
 
                 <div className="hidden md:flex justify-center flex-1 mr-8  ">
-                    <Link href="/" className="text-gray-700 hover:text-black mx-8">Home</Link>
-                    <Link href="/about" className="text-gray-700 hover:text-black mx-8">About</Link>
-                    <Link href="/services" className="text-gray-700 hover:text-black mx-8">Services</Link>
-                    <Link href="/contact" className="text-gray-700 hover:text-black mx-8">Contact</Link>
+                    <Link href="#Home" className="text-gray-700 hover:text-black mx-8">Home</Link>
+                    <Link href="#AboutTheApp" className="text-gray-700 hover:text-black mx-8">About</Link>
+                    <Link href="#AppFeatures" className="text-gray-700 hover:text-black mx-8">Features</Link>
+                    <Link href="#Pricing" className="text-gray-700 hover:text-black mx-8">Pricing</Link>
+                    <Link href= "#Testimonials" className="text-gray-700 hover:text-black mx-8">Testimonials</Link>
+                    <Link href= "#Faq" className="text-gray-700 hover:text-black mx-8">FAQ</Link>
                 </div>
 
                 <div className="hidden md:block shrink-0">
@@ -54,10 +56,12 @@ const Navbar = () => {
 
             {isMenuOpen && (
                 <div className="absolute right-0 mt-2 py-2 w-48 bg-white rounded-lg shadow-xl md:hidden">
-                    <Link href="/" className="block px-4 py-2 text-lg hover:underline">Home</Link>
-                    <Link href="/about" className="block px-4 py-2 text-lg hover:underline">About</Link>
-                    <Link href="/services" className="block px-4 py-2 text-lg hover:underline">Services</Link>
-                    <Link href="/contact" className="block px-4 py-2 text-lg hover:underline">Contact</Link>
+                    <Link href="#Home" className="block px-4 py-2 text-lg hover:underline">Home</Link>
+                    <Link href="#AboutTheApp" className="block px-4 py-2 text-lg hover:underline">About</Link>
+                    <Link href="#AppFeatures" className="block px-4 py-2 text-lg hover:underline">Services</Link>
+                    <Link href="#Pricing" className="block px-4 py-2 text-lg hover:underline scroll-">Contact</Link>
+                    <Link href="#Testimonials" className="block px-4 py-2 text-lg hover:underline">Testimonials</Link>
+                    <Link href="#Faq" className="block px-4 py-2 text-lg hover:underline">FAQ</Link>
                 </div>
                 
             )}
@@ -71,12 +75,13 @@ const Navbar = () => {
         </div>
         
         <div className='relative'>
-        <HeroSection />
-        <AboutTheApp />
-        <AppFeatures />
-        <Pricing/>
-        <Testimonials/>
-        <Faq/>
+        
+        <div id ="Home"> <HeroSection /></div>
+        <div id ="AboutTheApp"><AboutTheApp /></div>
+        <div id ="AppFeatures"><AppFeatures /></div>
+        <div id ="Pricing"><Pricing/></div>
+        <div id='Testimonials'><Testimonials/></div>
+        <div id='Faq'><Faq/></div>
         </div>
         </div>
     );

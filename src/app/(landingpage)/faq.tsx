@@ -13,7 +13,7 @@ const Faq = () => {
     ];
 
     return (
-        <div className="bg-white py-12 relative">
+        <div className="p-32 relative">
             <h1 className="text-3xl font-bold text-center mb-8">FAQ</h1>
             <div className="max-w-3xl mx-auto">
                 {faqs.map((faq) => (
@@ -52,7 +52,7 @@ const Faq = () => {
                           initial={{ y: 50, opacity: 0 }}
                           animate={{ y: 0, opacity: 1 }}
                           exit={{ y: 50, opacity: 0 }}
-                          transition={{ duration: 0.3 }}
+                          transition={{ duration: 0.35 }}
                         >
                             <motion.button 
                               className="absolute top-0 right-0 m-4"

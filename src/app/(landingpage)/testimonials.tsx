@@ -2,7 +2,7 @@
 
 const Testimonials = () => {
     return (
-        <div className="py-12 bg-white">
+        <div className="p-44">
             <h1 className="text-3xl font-bold text-center mb-8">Testimonials</h1>
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
 

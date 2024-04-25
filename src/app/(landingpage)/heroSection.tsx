@@ -10,7 +10,7 @@ import Typewriter from 'typewriter-effect';
 
 const HeroSection = () => {
   return (
-    <div className="  flex flex-col items-center justify-center text-black py-20 ">
+    <div className="  flex flex-col items-center justify-center text-black p-32">
         
         
       <h1 className="text-5xl font-bold mb-4 ">
