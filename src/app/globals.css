@@ -68,6 +68,10 @@
 --scroll-behavior: smooth!important;
 scroll-behavior: smooth!important;
 }
+.app-container {
+  display: flex;
+}
+
   }
 
   @layer base {

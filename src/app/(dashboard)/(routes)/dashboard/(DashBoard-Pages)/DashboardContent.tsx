@@ -1,8 +1,10 @@
 // pages/dashboard.js or a similar file
+'use client'
+
 import Image from 'next/image';
 import { IoIosLogOut, IoIosCloudUpload } from 'react-icons/io'; // Icons, make sure to install react-icons package
 
-const DashboardPage = () => {
+const DashboardContent = () => {
   return (
     <div className="min-h-screen bg-gray-100">
       <aside className="w-64" aria-label="Sidebar">
@@ -56,4 +58,4 @@ const DashboardPage = () => {
   );
 };
 
-export default DashboardPage;
+export default DashboardContent;
