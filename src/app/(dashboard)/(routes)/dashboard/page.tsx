@@ -1,6 +1,6 @@
 // page.tsx
 'use client'
-
+import { Inter } from 'next/font/google'
 import React, { useState } from 'react';
 import Header from "./header";
 import Sidebar from "./sidebar";
@@ -11,6 +11,9 @@ import NotificationsContent from '../dashboard/(DashBoard-Pages)/Notifcations';
 import ResourcesTipsContent from '../dashboard/(DashBoard-Pages)/Resources and Tips';
 // Correct the import paths
 ; // Correct the import paths
+
+
+
 type Content = 'dashboard' | 'job-recommendations' | 'application-tracking' | 'notifications' | 'resources-tips';
 
 const Page: React.FC = () => {

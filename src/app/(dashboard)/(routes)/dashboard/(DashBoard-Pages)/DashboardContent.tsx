@@ -1,59 +1,102 @@
 // pages/dashboard.js or a similar file
 'use client'
 
+import { Button } from '@/components/ui/button';
 import Image from 'next/image';
-import { IoIosLogOut, IoIosCloudUpload } from 'react-icons/io'; // Icons, make sure to install react-icons package
+import { IoIosCloudUpload } from 'react-icons/io'; // Make sure you have installed the react-icons package
+import { BsBriefcaseFill } from "react-icons/bs";
+import { IoSchoolSharp } from "react-icons/io5";
+import { BsBookFill } from "react-icons/bs";
+import { MdOutlinePalette } from "react-icons/md";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 const DashboardContent = () => {
   return (
-    <div className="min-h-screen bg-gray-100">
-      <aside className="w-64" aria-label="Sidebar">
-        {/* Sidebar content here */}
-      </aside>
-      <main className="pl-64">
-        {/* Header */}
-        <header className="flex justify-between items-center p-4 bg-white">
-          <h1 className="text-xl font-semibold">Welcome, Olivia Simmons</h1>
-          {/* Profile image and other header content */}
-        </header>
-
-        {/* Main content */}
-        <div className="p-4 space-y-4">
-          <div className="bg-white p-4 rounded-lg shadow">
-            <h2 className="text-lg font-semibold">Hey, I am Front-end Developer, Based in Brazil</h2>
-            {/* Profile card */}
-            <div className="flex items-center space-x-4">
-              <div>
-                {/* Replace with actual Image component */}
-                <Image src="/profile-pic.jpg" alt="Olivia Simmons" width={100} height={100} className="rounded-full" />
-              </div>
-              <div>
-                <h3 className="text-lg font-bold">Olivia Simmons</h3>
-                <button className="bg-purple-500 text-white px-3 py-1 rounded-lg flex items-center">
-                  Upload Resume <IoIosCloudUpload className="ml-2" />
-                </button>
-              </div>
-            </div>
-          </div>
-
-          {/* Details section */}
-          <section className="flex space-x-4">
-            {/* Work Experience card */}
-            <div className="flex-1 bg-purple-200 p-4 rounded-lg shadow">
-              <h3 className="font-semibold">Work Experience:</h3>
-              {/* Content */}
-            </div>
-
-            {/* Education card */}
-            <div className="flex-1 bg-green-200 p-4 rounded-lg shadow">
-              <h3 className="font-semibold">Education:</h3>
-              {/* Content */}
-            </div>
-          </section>
-
-          {/* More sections like Skills, Hobbies, etc */}
+    <div className="p-8">
+    <div className="flex items-center justify-between   rounded-lg">
+      <div className="flex items-center space-x-4 flex-grow ">
+        {/* Profile image */}
+        <Image src="/Test.png" alt="Olivia Simmons" width={128} height={128} className="rounded-full shadow-black shadow-xl " />
+        {/* Greeting message */}
+        <div className="min-w-0 p-10">
+          <h2 className="text-2xl font-bold text-gray-700 truncate">Hey, I am Front-end Developer,</h2>
+          <h3 className="text-xl text-gray-500 truncate">Based in Brazil 🇧🇷</h3>
+          <p className="text-gray-700 font-sans truncate">Olivia Simmons</p>
         </div>
-      </main>
+      </div>
+      {/* Upload button */}
+      <div className="flex-shrink-0 ml-4 pr-[118px]  ">
+        <Button className=" w-[223px] h-[72px] flex items-center  bg-purple-500 hover:bg-purple-600 text-white text-md font-extrabold rounded-xl">
+          Upload Resume <IoIosCloudUpload size={20} className="ml-2" />
+        </Button>
+      </div>
+    </div>
+
+    <div className="flex justify-center items-center  ">
+      
+  <div className="grid grid-cols-2 gap-8">
+    {/* Work Experience */}
+    <div className='border-2 border-grey-100 rounded-3xl'>
+    <div className="bg-purple-200 p-6 rounded-3xl shadow-xl w-[631px] h-[259px] border-white border-4">
+      <h3 className="text-3xl font-semibold mb-2">Work Experience:</h3>
+      
+      <div className="flex items-center  space-x-4 h-44 ">
+      <BsBriefcaseFill size={40} className="text-purple-600"/>
+        <div>
+          <p className="text-2xl font-semibold">Executive Manager</p>
+          <p className="text-xl">3 Years - Gorme Pharmaceuticals</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    {/* Education */}
+    <div className='border-2 border-grey-100 rounded-3xl'>
+    <div className="bg-green-200 p-6 rounded-3xl shadow-xl w-[631px] h-[259px] border-white border-4">
+      <h3 className="text-3xl font-semibold mb-2">Education:</h3>
+      <div className="flex items-center  space-x-4 h-44 ">
+        <IoSchoolSharp  size={40} className="text-purple-600"/>
+      <div>
+      <p className="text-2xl font-semibold">Bachelor</p>
+      <p className='text-xl'>TUMS University of Engineering</p>
+      </div>
+    </div>
+    </div>
+</div>
+    {/* Skills */}
+    <div className='border-2 border-grey-100 rounded-3xl'>
+
+    <div className="bg-pink-200 p-6 rounded-3xl shadow-xl w-[631px] h-[259px] border-white border-4">
+      <h3 className="text-3xl font-semibold mb-2">Skills:</h3>
+      <div className="flex items-center  space-x-4 h-44 ">
+      <MdOutlinePalette   size={40} color='#FF7AD6 ' />
+        <div>
+      <p className="text-2xl font-semibold">UI Designer</p>
+      <p className='text-xl'>6 Month Internship</p>
+      </div>
+    </div>
+    </div>
+    </div>
+    {/* Hobbies */}
+    <div className='border-2 border-grey-100 rounded-3xl'>
+
+    <div className="bg-blue-200 p-6 rounded-3xl shadow-xl w-[631px] h-[259px] border-white border-4">
+      <h3 className="text-3xl font-semibold mb-2">Hobbies:</h3>
+      
+
+      <div className="flex items-center  space-x-4 h-44 ">
+        <BsBookFill  size={40} color='#447EFA' />
+
+        <div>
+      <p className="text-2xl font-semibold">Reading Book</p>
+      <p className='text-xl'>700 Pages a Day</p>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+
     </div>
   );
 };
