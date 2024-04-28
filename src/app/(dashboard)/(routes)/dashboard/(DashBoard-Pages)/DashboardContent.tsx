@@ -17,12 +17,12 @@ const DashboardContent = () => {
     <div className="flex items-center justify-between   rounded-lg">
       <div className="flex items-center space-x-4 flex-grow ">
         {/* Profile image */}
-        <Image src="/Test.png" alt="Olivia Simmons" width={128} height={128} className="rounded-full shadow-black shadow-xl " />
+        <Image src="/Test.png" alt="Olivia Simmons" width={187} height={187} className="rounded-full shadow-black shadow-xl " />
         {/* Greeting message */}
-        <div className="min-w-0 p-10">
-          <h2 className="text-2xl font-bold text-gray-700 truncate">Hey, I am Front-end Developer,</h2>
-          <h3 className="text-xl text-gray-500 truncate">Based in Brazil 🇧🇷</h3>
-          <p className="text-gray-700 font-sans truncate">Olivia Simmons</p>
+        <div className="min-w-0 p-10 ">
+          <h2 className="text-5xl font-bold text-gray-700  pb-4">Hey, I am Front-end Developer,</h2>
+          <h3 className="text-4xl text-gray-500  pb-4">Based in Brazil 🇧🇷</h3>
+          <p className="text-gray-700 text-2xl  " >Olivia Simmons</p>
         </div>
       </div>
       {/* Upload button */}
@@ -52,7 +52,7 @@ const DashboardContent = () => {
     </div>
     {/* Education */}
     <div className='border-2 border-grey-100 rounded-3xl'>
-    <div className="bg-green-200 p-6 rounded-3xl shadow-xl w-[631px] h-[259px] border-white border-4">
+    <div className="bg-[#C1F4E6] p-6 rounded-3xl shadow-xl w-[631px] h-[259px] border-white border-4">
       <h3 className="text-3xl font-semibold mb-2">Education:</h3>
       <div className="flex items-center  space-x-4 h-44 ">
         <IoSchoolSharp  size={40} className="text-purple-600"/>
@@ -66,7 +66,7 @@ const DashboardContent = () => {
     {/* Skills */}
     <div className='border-2 border-grey-100 rounded-3xl'>
 
-    <div className="bg-pink-200 p-6 rounded-3xl shadow-xl w-[631px] h-[259px] border-white border-4">
+    <div className="bg-[#FAE0F2] p-6 rounded-3xl shadow-xl w-[631px] h-[259px] border-white border-4">
       <h3 className="text-3xl font-semibold mb-2">Skills:</h3>
       <div className="flex items-center  space-x-4 h-44 ">
       <MdOutlinePalette   size={40} color='#FF7AD6 ' />
@@ -80,7 +80,7 @@ const DashboardContent = () => {
     {/* Hobbies */}
     <div className='border-2 border-grey-100 rounded-3xl'>
 
-    <div className="bg-blue-200 p-6 rounded-3xl shadow-xl w-[631px] h-[259px] border-white border-4">
+    <div className="bg-[#CBDAFA] p-6 rounded-3xl shadow-xl w-[631px] h-[259px] border-white border-4">
       <h3 className="text-3xl font-semibold mb-2">Hobbies:</h3>
       
 
