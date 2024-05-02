@@ -10,6 +10,7 @@ import AppFeatures from './appFeatures';
 import Pricing from './pricing';
 import Testimonials from './testimonials';
 import Faq from './faq';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 //import {Typewriter} from 'react-simple-typewriter'; Delete Instalation of react-simple-typewriter
 
 const Navbar = () => {
