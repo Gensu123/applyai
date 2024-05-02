@@ -85,7 +85,7 @@ const Navbar = () => {
         <div id ="Home"> <HeroSection /></div>
         <div id ="AboutTheApp"><AboutTheApp /></div>
         <div id ="AppFeatures"><AppFeatures /></div>
-        <div id ="Pricing"><Pricing/></div>
+        {/* <div id ="Pricing"><Pricing/></div> */}
         <div id='Testimonials'><Testimonials/></div>
         <div id='Faq'><Faq/></div>
         </div>

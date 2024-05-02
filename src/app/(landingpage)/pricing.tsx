@@ -10,42 +10,62 @@ const Pricing = () => {
     });
 
     return (
-        <div className="p-44 md:p-12 flex justify-center items-center"> {/* Adjusted padding */}
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h1 className="text-3xl font-bold text-center mb-12" data-aos='fade-up'>Pricing</h1>
-                <div className="grid gap-8 md:grid-cols-3"> {/* Changed to grid layout */}
-                    {/* Basic Plan */}
-                    <div data-aos-offset='325' data-aos='fade-up' className="flex flex-col items-center p-6 bg-gray-100 rounded-xl shadow-lg min-h-[380px] hover:scale-105 transition duration-300">
-                        <h2 className="text-lg font-semibold mt-2 mb-4">Basic</h2>
-                        <p className="text-2xl font-bold mb-4">$5</p> {/* Adjusted size */}
-                        <p className="text-sm text-center mb-6">
-                            Access essential features for free with our Basic plan. Get started on your job search journey without any cost, including personalized job matching, effortless application process, and real-time job updates.
-                        </p>
-                        <button className="bg-purple-700 text-white font-semibold px-6 py-2 rounded-lg hover:bg-purple-600 transition duration-500">
-                            Buy Now
+        <div className="pt-32 p-4  md:p-12 lg:p-28 flex justify-center items-center"> {/* Adjusted padding for mobile */}
+            <div className="max-w-4xl mx-auto sm:px-6 lg:px-8">
+                <h1 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-12" data-aos='fade-up'>Pricing</h1>
+                <div className="grid gap-4 sm:gap-8 md:grid-cols-4"> {/* Adjusted grid gap and columns */}
+                    {/* Explore Plan */}
+                    <div data-aos-offset='325' data-aos='fade-up' className="flex flex-col items-center p-6 bg-gray-100 rounded-xl shadow-lg min-h-[300px] sm:min-h-[380px] hover:scale-105 transition duration-300">
+                        <h2 className="text-2xl sm:text-xl font-semibold mt-2 mb-4">Explore</h2>
+                        <p className="text-lg sm:text-2xl font-bold mb-4">$0</p>
+                        <ul className="text-sm sm:text-sm text-left mb-4 sm:mb-6 list-disc pl-4 ">
+                            <li>Access basic job recommendations</li>
+                            <li>5 personalized job postings per month</li>
+                            <li>Basic support</li>
+                        </ul>
+                        <button className="bg-purple-700 text-white font-semibold px-4 py-2 sm:px-6 sm:py-2 rounded-lg hover:bg-purple-600 transition duration-500">
+                            Get Started
                         </button>
                     </div>
 
-                    {/* Premium Plan */}
-                    <div data-aos-offset='325' data-aos-delay='250' data-aos='fade-up' className="flex flex-col items-center p-6 bg-purple-500 rounded-xl shadow-lg min-h-[380px] hover:scale-105 transition duration-300">
-                        <h2 className="text-lg font-semibold mt-2 mb-4">Premium</h2>
-                        <p className="text-2xl font-bold mb-4">$10</p> {/* Adjusted size */}
-                        <p className="text-sm text-center mb-6">
-                            Upgrade to our Premium plan for advanced features and exclusive benefits. Enjoy everything in the Basic plan plus additional perks tailored to your needs.
-                        </p>
-                        <button className="bg-white text-purple-500 font-semibold px-6 py-2 rounded-lg hover:bg-purple-100 transition duration-500">
+                    {/* Enhance Plan */}
+                    { <div data-aos-offset='325' data-aos-delay='100' data-aos='fade-up' className="flex flex-col items-center p-6 bg-gray-100 rounded-xl shadow-lg min-h-[300px] sm:min-h-[380px] hover:scale-105 transition duration-300">
+                        <h2 className="text-2xl sm:text-xl font-semibold mt-2 mb-4">Enhance</h2>
+                        <p className="text-lg sm:text-2xl font-bold mb-4">$10</p>
+                        <ul className="text-sm sm:text-sm text-left mb-4 sm:mb-6 list-disc pl-4">
+                            <li>Advanced job recommendations</li>
+                            <li>20 personalized job postings per month</li>
+                            <li>Email and chat support</li>
+                        </ul>
+                        <button className="bg-purple-700 text-white font-semibold px-4 py-2 sm:px-6 sm:py-2 rounded-lg hover:bg-purple-600 transition duration-500">
+                            Buy Now
+                        </button>
+                    </div>}
+
+                    {/* Optimize Plan */}
+                    <div data-aos-offset='325' data-aos-delay='200' data-aos='fade-up' className="flex flex-col items-center p-6 bg-purple-500 rounded-xl shadow-lg min-h-[300px] sm:min-h-[380px] hover:scale-105 transition duration-300">
+                        <h2 className="text-2xl sm:text-xl font-semibold mt-2 mb-4">Optimize</h2>
+                        <p className="text-lg sm:text-2xl font-bold mb-4">$25</p>
+                        <ul className="text-sm sm:text-sm text-left mb-4 sm:mb-6 list-disc pl-4 text-white">
+                            <li>5,000 job recommendations a month</li>
+                            <li>Access to exclusive job listings</li>
+                            <li>Priority support with direct account manager</li>
+                        </ul>
+                        <button className="bg-white text-purple-500 font-semibold px-4 py-2 sm:px-6 sm:py-2 rounded-lg hover:bg-purple-100 transition duration-500">
                             Buy Now
                         </button>
                     </div>
 
                     {/* Enterprise Plan */}
-                    <div data-aos-offset='325' data-aos-delay='350' data-aos='fade-up' className="flex flex-col items-center p-6 bg-gray-100 rounded-xl shadow-lg min-h-[380px] hover:scale-105 transition duration-300">
-                        <h2 className="text-lg font-semibold mt-2 mb-4">Enterprise</h2>
-                        <p className="text-2xl font-bold mb-4">$15</p> {/* Adjusted size */}
-                        <p className="text-sm text-center mb-6">
-                            For large organizations and businesses, our Enterprise plan offers custom solutions and dedicated support. Contact us to discuss your requirements and get a personalized quote.
-                        </p>
-                        <button className="bg-purple-700 text-white font-semibold px-6 py-2 rounded-lg hover:bg-purple-600 transition duration-500">
+                    <div data-aos-offset='325' data-aos-delay='300' data-aos='fade-up' className="flex flex-col items-center p-6 bg-gray-100 rounded-xl shadow-lg min-h-[300px] sm:min-h-[380px] hover:scale-105 transition duration-300">
+                        <h2 className="text-2xl sm:text-xl font-semibold mt-2 mb-4">Enterprise</h2>
+                        <p className="text-lg sm:text-2xl font-bold mb-4">Custom Pricing</p>
+                        <ul className="text-sm sm:text-sm text-left mb-4 sm:mb-6 list-disc pl-4">
+                            <li>Customized AI-driven job matching solutions</li>
+                            <li>Unlimited job postings tailored to your company's needs</li>
+                            <li>Dedicated account manager and 24/7 support</li>
+                        </ul>
+                        <button className="bg-purple-700 text-white font-semibold px-4 py-2 sm:px-6 sm:py-2 rounded-lg hover:bg-purple-600 transition duration-500">
                             Contact Us
                         </button>
                     </div>
