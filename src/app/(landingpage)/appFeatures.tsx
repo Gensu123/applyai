@@ -11,7 +11,7 @@ const AppFeatures = () => {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {/* Personalized Job Matching */}
-          <div className="flex flex-col items-center  bg-gray-100 rounded-lg shadow-lg  p-10 text-center" data-aos='fade-up'>
+          <div className="flex flex-col items-center  bg-gray-100 rounded-lg shadow-lg   text-center" data-aos='fade-up'>
             <div className='bg-[#D0CAF9] bg-opacity-50 w-16 h-16 flex justify-center items-center rounded-xl'>
               <IoBriefcaseOutline size={40} color='green' />
             </div>
@@ -34,7 +34,7 @@ const AppFeatures = () => {
           </div>
 
           {/* User-Friendly Interface */}
-          <div className="flex flex-col items-center bg-gray-40 rounded-lg shadow-lg p-4" data-aos='fade-up'>
+          <div className="flex flex-col items-center bg-gray-100 rounded-lg shadow-lg p-4" data-aos='fade-up'>
             <div className='bg-[#FFD465] bg-opacity-50 w-16 h-16 flex justify-center items-center rounded-xl'>
               <MdOutlineComputer size={40} color='#FFD465'/>
             </div>

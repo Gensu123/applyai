@@ -10,7 +10,7 @@ const Pricing = () => {
     });
 
     return (
-        <div className="p-44 md:p-12"> {/* Adjusted padding */}
+        <div className="p-44 md:p-12 flex justify-center items-center"> {/* Adjusted padding */}
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h1 className="text-3xl font-bold text-center mb-12" data-aos='fade-up'>Pricing</h1>
                 <div className="grid gap-8 md:grid-cols-3"> {/* Changed to grid layout */}

@@ -26,7 +26,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center text-black p-8 md:p-12 lg:p-44">
+    <div className="flex flex-col items-center justify-center text-black pt-20 md:p-12 lg:p-44 ">
       <h1 className="text-3xl md:text-5xl font-bold mb-4" data-aos='fade-up'>
         Unlock Your Dream Job with 
         <div className="text-4xl md:text-6xl font-bold mb-4 relative inline-block">
@@ -50,8 +50,8 @@ const HeroSection = () => {
             <Image
               src={centralImage}
               alt="Job Recommendations"
-              width={700} // These sizes might still be too large for very small devices
-              height={700}
+              width={550} // These sizes might still be too large for very small devices
+              height={550}
               objectFit="contain"
               className="rounded-xl shadow-2xl"
             />
