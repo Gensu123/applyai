@@ -2,7 +2,7 @@ import React from 'react';
 
 const Testimonials = () => {
     return (
-        <div className="p-8 md:p-44">
+        <div className="p-8 md:12 lg:md:p-28">
             <h1 className="text-3xl font-bold text-center mb-8" data-aos='fade-up'>Testimonials</h1>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 " >
                 {[

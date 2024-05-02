@@ -17,7 +17,7 @@ const AboutTheApp = () => {
   }, []);
 
   return (
-    <div className="container mx-auto px-4 sm:px-12 lg:px-44 pt-44 flex flex-col lg:flex-row items-center justify-between">
+    <div className="container mx-auto px-4 p-8 md:p-12 lg:p-44 flex flex-col lg:flex-row items-center justify-between">
       <Tilt>
         <div className="flex flex-col items-center lg:flex-row lg:items-start" data-aos='fade-up'>
           <div className="relative flex justify-center items-center mb-6 lg:mb-0">

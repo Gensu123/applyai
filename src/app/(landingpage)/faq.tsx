@@ -22,7 +22,7 @@ const Faq = () => {
     ];
 
     return (
-        <div className="p-8 md:p-12">
+        <div className="p-8 md:p-12 lg:p-44">
             <h1 className="text-3xl font-bold text-center mb-8" data-aos="fade-up">FAQ</h1>
             <div className="max-w-3xl mx-auto">
                 {faqs.map((faq, index) => (

@@ -26,7 +26,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center text-black md:p-8">
+    <div className="flex flex-col items-center justify-center text-black p-8 md:p-12 lg:p-44">
       <h1 className="text-3xl md:text-5xl font-bold mb-4" data-aos='fade-up'>
         Unlock Your Dream Job with 
         <div className="text-4xl md:text-6xl font-bold mb-4 relative inline-block">
