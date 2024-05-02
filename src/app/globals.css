@@ -80,4 +80,10 @@ scroll-behavior: smooth!important;
     body {
       @apply bg-background text-foreground;
     }
+
+    .dark {
+      body {
+        @apply bg-background text-foreground;
+      }
+    }
   }

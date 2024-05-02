@@ -1,8 +1,17 @@
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Faq = () => {
     const [selectedId, setSelectedId] = useState<string | null>(null);
+    useEffect(() => {
+        AOS.init({
+            duration: 1200,
+            once: true, // Animations will only play once
+        });
+    }, []);
 
     const faqs = [
         { id: 'faq1', question: "How does ApplyAI match me with jobs?", answer: "Answer to question 1." },
@@ -13,18 +22,20 @@ const Faq = () => {
     ];
 
     return (
-        <div className="p-32 relative">
-            <h1 className="text-3xl font-bold text-center mb-8">FAQ</h1>
+        <div className="p-8 md:p-12">
+            <h1 className="text-3xl font-bold text-center mb-8" data-aos="fade-up">FAQ</h1>
             <div className="max-w-3xl mx-auto">
-                {faqs.map((faq) => (
+                {faqs.map((faq, index) => (
                     <motion.div 
                       key={faq.id} 
                       layoutId={faq.id} 
                       onClick={() => setSelectedId(selectedId === faq.id ? null : faq.id)} 
-                      className="mb-4 p-6 bg-gray-100 rounded-md shadow-sm flex justify-between items-center cursor-pointer"
+                      className="mb-4 p-6 bg-gray-100 rounded-md shadow-sm cursor-pointer"
+                      data-aos="fade-up"
+                      data-aos-delay={`${index * 100}`} // Stagger the animation for each FAQ item
                     >
                         <p className="text-lg font-medium">{faq.question}</p>
-                        <span className="text-blue-600 text-2xl">+</span>
+                        <span className="text-blue-600 text-2xl">{selectedId === faq.id ? '-' : '+'}</span> {/* Toggle icon */}
                     </motion.div>
                 ))}
             </div>
@@ -58,6 +69,7 @@ const Faq = () => {
                               className="absolute top-0 right-0 m-4"
                               onClick={() => setSelectedId(null)}
                             >
+                              X
                             </motion.button>
                             {faqs.filter(faq => faq.id === selectedId).map((filteredFaq) => (
                                 <motion.div key={filteredFaq.id}>

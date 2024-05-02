@@ -1,5 +1,5 @@
 "use client"
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { IoIosMenu, IoIosClose } from 'react-icons/io';
 import { Button } from '@/components/ui/button';
@@ -11,6 +11,9 @@ import Pricing from './pricing';
 import Testimonials from './testimonials';
 import Faq from './faq';
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import Helmet from "react-helmet"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 //import {Typewriter} from 'react-simple-typewriter'; Delete Instalation of react-simple-typewriter
 
 const Navbar = () => {
@@ -19,7 +22,8 @@ const Navbar = () => {
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
-
+    
+    
     return (
     <div className= "relative min-h-screen    ">
         <div className="absolute inset-0 h-full w-full bg-purple bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:10rem_4rem] z-0"></div>
@@ -29,6 +33,7 @@ const Navbar = () => {
         <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_350px_at_100%_800px,rgba(194,244,230,.25),transparent)]">
 
             
+
         <div className="mx-auto h-18 px-4 sm:px-6 lg:px-8 z-10 fixed w-full bg-gray-50">
             <nav className="flex justify-between items-center h-16 border-b border-gray-200">
                          <Image src="/Logo.png" height={120} width={120} alt="logo" />
@@ -49,9 +54,9 @@ const Navbar = () => {
                 </div>
 
                 <div className="hidden md:block shrink-0">
-                    <Link href="/sign-in">
+                    {/* <Link href="/sign-in">
                         <Button className="bg-[#5422DD] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Sign in</Button>
-                    </Link>
+                    </Link> */}
                 </div>
             </nav>
 
