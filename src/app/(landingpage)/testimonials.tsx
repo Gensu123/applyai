@@ -7,7 +7,7 @@ const Testimonials = () => {
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                 {[
                     { name: "Danny Moonsoon", title: "CEO & Founder", testimonial: "I found my dream job within days of using ApplyAI.", imageUrl: '/DomTate.jpg' },
-                    { name: "Abby Hollis", title: "Lead at Uniting VIC", testimonial: "Thanks to ApplyAI, I landed a job that perfectly matches my skills.", imageUrl: "https://example.com/image-abby.jpg" },
+                    { name: "Abby Hollis", title: "Lead at Uniting VIC", testimonial: "Thanks to ApplyAI, I landed a job that perfectly matches my skills.", imageUrl: "/Mykala.jpg" },
                     { name: "Omar Farooq", title: "VP of Product Design", testimonial: "Thanks to ApplyAI, I landed a job that perfectly matches my skills.", imageUrl: "https://example.com/image-omar.jpg" },
                 ].map((item, index) => (
                     <div key={index} data-aos="zoom-in" data-aos-delay={`${index * 100 + 100}`} className="bg-gray-100 rounded-xl shadow-md p-6">
