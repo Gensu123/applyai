@@ -49,6 +49,10 @@ const Faq = () => {
 
   return (
     <div className="pt-32 p-4  md:p-24">
+       <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_350px_at_10%_5200px,rgba(213,197,255,.25),transparent)]">
+        <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_350px_at_100%_5200px,rgba(186,255,236,.25),transparent)]">
+          <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_350px_at_100%_5800px,rgba(244,233,193,.25),transparent)]">
+            <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_350px_at_10%_5800px,rgba(194,244,230,.3),transparent)]"></div></div></div></div>
       <h1
         className="text-2xl sm:text-3xl font-bold text-center mb-6"
         data-aos="fade-up">
