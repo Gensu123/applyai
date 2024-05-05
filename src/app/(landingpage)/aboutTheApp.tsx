@@ -21,10 +21,8 @@ const AboutTheApp = () => {
       <Tilt>
         <div className="flex flex-col items-center lg:flex-row lg:items-start" data-aos='fade-up'>
           <div className="relative flex justify-center items-center mb-6 lg:mb-0">
-            {/* Card */}
-            <div className="absolute w-44 h-44 lg:w-64 lg:h-64 bg-white shadow-xl rounded-3xl z-10"></div>
             {/* Progress circle */}
-            <div className="relative  h-44 w-44 lg:w-64 lg:h-64 z-20">
+            <div className="relative  h-44 w-44 shadow-xl rounded-3xl bg-purple-50 lg:w-80 lg:h-80 z-20">
               <svg className="  w-full h-full  " viewBox="0 0 100 100" data-aos='fade-up'>
                 <defs>
                   <linearGradient id="progress-gradient" x1="50%" y1="100%" x2="50%" y2="0%">
@@ -71,9 +69,9 @@ const AboutTheApp = () => {
           </div>
         </div>
       </Tilt>
-      <div className=" lg:ml-14 text-center pt-20" data-aos='fade-up'>
+      <div className=" lg:ml-14 text-center  " data-aos='fade-up'>
         <h1 className="text-2xl lg:text-4xl font-bold mb-4 ">Introducing ApplyAI</h1>
-        <p className="mb-6 text-sm lg:text-2xl  ">
+        <p className="mb-6 text-sm lg:text-xl  ">
           Our platform is designed to revolutionize the way you discover and apply for jobs
           tailored to your unique skills and preferences. Whether you're a seasoned professional
           or just starting your career, ApplyAI empowers you to find the perfect job match
@@ -81,9 +79,9 @@ const AboutTheApp = () => {
           recommendations that match your expertise and aspirations.
         </p>
         <Link href="#Pricing">
-          <Button className="bg-blue-500 text-white font-bold py-2 px-4 rounded">
+          {/* <Button className="bg-blue-500 text-white font-bold py-2 px-4 rounded">
             View Pricing
-          </Button>
+          </Button> */}
         </Link>
       </div>
     </div>

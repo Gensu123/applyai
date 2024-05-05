@@ -44,11 +44,11 @@ const Navbar = () => {
                     </button>
                 </div>
 
-                <div className="hidden md:flex justify-center flex-1 mr-8  ">
+                <div className="hidden md:flex justify-center items-center flex-1 mr-8  text-center ">
                     <Link href="#Home" className="text-gray-700 hover:text-black mx-8">Home</Link>
                     <Link href="#AboutTheApp" className="text-gray-700 hover:text-black mx-8">About</Link>
                     <Link href="#AppFeatures" className="text-gray-700 hover:text-black mx-8">Features</Link>
-                    <Link href="#Pricing" className="text-gray-700 hover:text-black mx-8">Pricing</Link>
+                    {/* <Link href="#Pricing" className="text-gray-700 hover:text-black mx-8">Pricing</Link> */}
                     <Link href= "#Testimonials" className="text-gray-700 hover:text-black mx-8">Testimonials</Link>
                     <Link href= "#Faq" className="text-gray-700 hover:text-black mx-8">FAQ</Link>
                 </div>
@@ -65,7 +65,7 @@ const Navbar = () => {
                     <Link href="#Home" className="block px-4 py-2 text-lg hover:underline">Home</Link>
                     <Link href="#AboutTheApp" className="block px-4 py-2 text-lg hover:underline">About</Link>
                     <Link href="#AppFeatures" className="block px-4 py-2 text-lg hover:underline">Services</Link>
-                    <Link href="#Pricing" className="block px-4 py-2 text-lg hover:underline scroll-">Contact</Link>
+                    {/* <Link href="#Pricing" className="block px-4 py-2 text-lg hover:underline scroll-">Contact</Link> */}
                     <Link href="#Testimonials" className="block px-4 py-2 text-lg hover:underline">Testimonials</Link>
                     <Link href="#Faq" className="block px-4 py-2 text-lg hover:underline">FAQ</Link>
                 </div>
