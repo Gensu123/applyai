@@ -47,6 +47,16 @@ const Navbar = () => {
                     </button>
                   </div>
 
+<<<<<<< HEAD
+                <div className="hidden md:flex justify-center items-center flex-1 mr-8  text-center ">
+                    <Link href="#Home" className="text-gray-700 hover:text-black mx-8">Home</Link>
+                    <Link href="#AboutTheApp" className="text-gray-700 hover:text-black mx-8">About</Link>
+                    <Link href="#AppFeatures" className="text-gray-700 hover:text-black mx-8">Features</Link>
+                    {/* <Link href="#Pricing" className="text-gray-700 hover:text-black mx-8">Pricing</Link> */}
+                    <Link href= "#Testimonials" className="text-gray-700 hover:text-black mx-8">Testimonials</Link>
+                    <Link href= "#Faq" className="text-gray-700 hover:text-black mx-8">FAQ</Link>
+                </div>
+=======
                   <div className="hidden md:flex justify-center flex-1 mr-8 hover:cursor-pointer ">
                     <Link
                       href="#Home"
@@ -79,6 +89,7 @@ const Navbar = () => {
                       FAQ
                     </Link>
                   </div>
+>>>>>>> a9d4496cb2ca5ef15a34b6bb1adc99a5f7a141ff
 
                   <div className="hidden md:block shrink-0">
                     {/* <Link href="/sign-in">
@@ -87,6 +98,23 @@ const Navbar = () => {
                   </div>
                 </nav>
 
+<<<<<<< HEAD
+            {isMenuOpen && (
+                <div className="absolute right-0 mt-2 py-2 w-48 bg-white rounded-lg shadow-xl md:hidden">
+                    <Link href="#Home" className="block px-4 py-2 text-lg hover:underline">Home</Link>
+                    <Link href="#AboutTheApp" className="block px-4 py-2 text-lg hover:underline">About</Link>
+                    <Link href="#AppFeatures" className="block px-4 py-2 text-lg hover:underline">Services</Link>
+                    {/* <Link href="#Pricing" className="block px-4 py-2 text-lg hover:underline scroll-">Contact</Link> */}
+                    <Link href="#Testimonials" className="block px-4 py-2 text-lg hover:underline">Testimonials</Link>
+                    <Link href="#Faq" className="block px-4 py-2 text-lg hover:underline">FAQ</Link>
+                </div>
+                
+            )}
+              <div className="relative z-10">
+       
+      </div>
+        </div>
+=======
                 {isMenuOpen && (
                   // IT MADE A LOT OF UI SENSE TO MAKE THE NAV FOR PHONES TO BE 100VW, I ALSO ADDED ANIMATIONS TO THE NAV BAR FOR SMOOTH UI EXPERIENCE AND TO MATCH THE ALREADY EXISTING ANIMATION.
                   <div
@@ -133,6 +161,7 @@ const Navbar = () => {
                 )}
                 <div className="relative z-10"></div>
               </div>
+>>>>>>> a9d4496cb2ca5ef15a34b6bb1adc99a5f7a141ff
             </div>
           </div>
         </div>
