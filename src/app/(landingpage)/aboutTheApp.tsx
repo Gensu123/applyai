@@ -97,17 +97,6 @@ const AboutTheApp = () => {
           </div>
         </div>
       </Tilt>
-<<<<<<< HEAD
-      <div className=" lg:ml-14 text-center  " data-aos='fade-up'>
-        <h1 className="text-2xl lg:text-4xl font-bold mb-4 ">Introducing ApplyAI</h1>
-        <p className="mb-6 text-sm lg:text-xl  ">
-          Our platform is designed to revolutionize the way you discover and apply for jobs
-          tailored to your unique skills and preferences. Whether you're a seasoned professional
-          or just starting your career, ApplyAI empowers you to find the perfect job match
-          effortlessly. Say goodbye to endless job listings and hello to personalized job
-          recommendations that match your expertise and aspirations.
-        </p>
-=======
       <div className=" lg:ml-14  pt-20" data-aos="fade-up">
         <h1 className="text-2xl lg:text-4xl font-bold mb-4 text-center">
           Introducing ApplyAI
@@ -122,7 +111,6 @@ const AboutTheApp = () => {
             recommendations that match your expertise and aspirations.
           </p>
         </div>
->>>>>>> a9d4496cb2ca5ef15a34b6bb1adc99a5f7a141ff
         <Link href="#Pricing">
           {/* <Button className="bg-blue-500 text-white font-bold py-2 px-4 rounded">
             View Pricing
