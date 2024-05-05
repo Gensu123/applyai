@@ -61,10 +61,16 @@ const HeroSection = () => {
       </p>
 
       <div
-        className="flex justify-center items-center"
+        className="flex justify-center items-center "
         id="getWaitlistContainer"
         data-waitlist_id="16500"
-        data-widget_type="WIDGET_2"></div>
+        data-widget_type="WIDGET_1"
+        
+        
+        
+        >
+       
+        </div>
       <link
         rel="stylesheet"
         type="text/css"

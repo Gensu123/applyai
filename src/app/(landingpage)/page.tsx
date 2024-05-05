@@ -30,6 +30,7 @@ const Navbar = () => {
         <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_350px_at_10%_200px,rgba(186,255,236,.25),transparent)]">
           <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_350px_at_10%_800px,rgba(244,233,193,.5),transparent)]">
             <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_350px_at_100%_800px,rgba(194,244,230,.25),transparent)]">
+              
               <div className="mx-auto h-18 px-4 sm:px-6 lg:px-8 z-10 fixed w-full bg-slate-50">
                 <nav className="flex justify-between items-center h-16 border-b border-slate-200">
                   <Image src="/Logo.png" height={120} width={120} alt="logo" />
