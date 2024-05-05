@@ -21,6 +21,7 @@ const AppFeatures = () => {
             <div className="bg-[#D0CAF9] bg-opacity-50 w-12 h-12 sm:w-16 sm:h-16 flex justify-center items-center rounded-xl">
               <IoBriefcaseOutline size={32} color="green" />
             </div>
+            
             <h2
               className="text-md sm:text-lg font-semibold mt-2"
               data-aos="fade-up">
