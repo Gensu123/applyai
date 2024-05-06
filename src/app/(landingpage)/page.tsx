@@ -43,26 +43,27 @@ const Navbar = () => {
             </button>
           </div>
 
-          <div className="hidden md:flex flex-1 justify-center items-center">
-            <Link href="#Home" className="text-slate-700 hover:text-black mx-8">
-              Home
-            </Link>
-            <Link href="#AboutTheApp" className="text-slate-700 hover:text-black mx-8">
-              About
-            </Link>
-            <Link href="#AppFeatures" className="text-slate-700 hover:text-black mx-8">
-              Features
-            </Link>
-            <Link href="#Pricing" className="text-slate-700 hover:text-black mx-8">
-              Pricing
-            </Link>
-            <Link href="#Testimonials" className="text-slate-700 hover:text-black mx-8">
-              Testimonials
-            </Link>
-            <Link href="#Faq" className="text-slate-700 hover:text-black mx-8">
-              FAQ
-            </Link>
-          </div>
+          <div className="hidden md:flex flex-1 justify-center text-lg items-center space-x-8 pr-32">
+    <Link href="#Home" className="text-slate-700 hover:text-black">
+        Home
+    </Link>
+    <Link href="#AboutTheApp" className="text-slate-700 hover:text-black">
+        About
+    </Link>
+    <Link href="#AppFeatures" className="text-slate-700 hover:text-black">
+        Features
+    </Link>
+    <Link href="#Pricing" className="text-slate-700 hover:text-black">
+        Pricing
+    </Link>
+    {/* <Link href="#Testimonials" className="text-slate-700 hover:text-black">
+        Testimonials
+    </Link> */}
+    <Link href="#Faq" className="text-slate-700 hover:text-black">
+        FAQ
+    </Link>
+</div>
+
 
           <div className="hidden md:block shrink-0">
             {/* <Link href="/sign-in">
@@ -129,9 +130,9 @@ const Navbar = () => {
         <div id="Pricing">
           <Pricing />
         </div>
-        <div id="Testimonials">
+        {/* <div id="Testimonials">
           <Testimonials />
-        </div>
+        </div> */}
         <div id="Faq">
           <Faq />
         </div>

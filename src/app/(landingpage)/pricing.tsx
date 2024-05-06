@@ -10,7 +10,7 @@ const Pricing = () => {
   });
 
   return (
-    <div className="flex justify-center items-center p-32">
+    <div className="flex justify-center items-center pt-32 p-4 md:p-12 lg:p-44 ">
          
       {" "}
       {/* Adjusted padding for mobile */}
@@ -33,9 +33,10 @@ const Pricing = () => {
             </h2>
             <p className="text-lg sm:text-2xl font-bold mb-4">$0</p>
             <ul className="text-sm sm:text-sm text-left mb-4 sm:mb-6 list-disc pl-4 ">
-              <li>Access basic job recommendations</li>
-              <li>1000 personalized job postings per month</li>
+              <li>Access to basic job recommendations based on resume analysis.</li>
+              <li>Ability to apply to up to 5 recommended jobs per month</li>
               <li>Basic support</li>
+              <li>Best For those just entering the job market who are beginning their career exploration and need only minimal support.</li>
             </ul>
             <button className="bg-purple-700 text-white font-semibold px-4 py-2 sm:px-6 sm:py-2 rounded-lg hover:bg-purple-600  transition duration-500">
               Get Started
