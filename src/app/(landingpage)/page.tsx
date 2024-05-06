@@ -53,12 +53,12 @@ const Navbar = () => {
             <Link href="#AppFeatures" className="text-slate-700 hover:text-black mx-8">
               Features
             </Link>
-            {/* <Link href="#Pricing" className="text-slate-700 hover:text-black mx-8">
+            <Link href="#Pricing" className="text-slate-700 hover:text-black mx-8">
               Pricing
             </Link>
             <Link href="#Testimonials" className="text-slate-700 hover:text-black mx-8">
               Testimonials
-            </Link> */}
+            </Link>
             <Link href="#Faq" className="text-slate-700 hover:text-black mx-8">
               FAQ
             </Link>
@@ -94,7 +94,7 @@ const Navbar = () => {
               onClick={toggleMenu}>
               Features
             </Link>
-            {/* <Link
+            <Link
               href="#Pricing"
               className="block px-4 py-2 text-lg hover:underline"
               onClick={toggleMenu}>
@@ -105,7 +105,7 @@ const Navbar = () => {
               className="block px-4 py-2 text-lg hover:underline"
               onClick={toggleMenu}>
               Testimonials
-            </Link> */}
+            </Link>
             <Link
               href="#Faq"
               className="block px-4 py-2 text-lg hover:underline"
