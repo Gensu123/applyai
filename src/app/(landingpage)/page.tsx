@@ -42,15 +42,15 @@ const Navbar = () => {
               )}
             </button>
           </div>
-{/* I am having trouble with centering the links in the middle of the navbar. */}
-          <div className="hidden md:flex flex-1 justify-center items-center ">
-            <Link href="#Home" className="text-slate-700 hover:text-black ">
+
+          <div className="hidden md:flex flex-1 justify-center items-center">
+            <Link href="#Home" className="text-slate-700 hover:text-black mx-8">
               Home
             </Link>
-            <Link href="#AboutTheApp" className="text-slate-700 hover:text-black ">
+            <Link href="#AboutTheApp" className="text-slate-700 hover:text-black mx-8">
               About
             </Link>
-            <Link href="#AppFeatures" className="text-slate-700 hover:text-black ">
+            <Link href="#AppFeatures" className="text-slate-700 hover:text-black mx-8">
               Features
             </Link>
             {/* <Link href="#Pricing" className="text-slate-700 hover:text-black mx-8">
@@ -59,7 +59,7 @@ const Navbar = () => {
             <Link href="#Testimonials" className="text-slate-700 hover:text-black mx-8">
               Testimonials
             </Link> */}
-            <Link href="#Faq" className="text-slate-700 hover:text-black ">
+            <Link href="#Faq" className="text-slate-700 hover:text-black mx-8">
               FAQ
             </Link>
           </div>
@@ -94,7 +94,7 @@ const Navbar = () => {
               onClick={toggleMenu}>
               Features
             </Link>
-            <Link
+            {/* <Link
               href="#Pricing"
               className="block px-4 py-2 text-lg hover:underline"
               onClick={toggleMenu}>
@@ -105,7 +105,7 @@ const Navbar = () => {
               className="block px-4 py-2 text-lg hover:underline"
               onClick={toggleMenu}>
               Testimonials
-            </Link>
+            </Link> */}
             <Link
               href="#Faq"
               className="block px-4 py-2 text-lg hover:underline"

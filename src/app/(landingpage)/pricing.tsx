@@ -20,7 +20,7 @@ const Pricing = () => {
           data-aos="fade-up">
           Pricing
         </h1>
-        <div className="grid gap-4 sm:gap-8 md:grid-cols-4">
+        <div className="grid gap-4 sm:gap-8 md:grid-cols-3">
           {" "}
           {/* Adjusted grid gap and columns */}
           {/* Explore Plan */}
@@ -34,7 +34,7 @@ const Pricing = () => {
             <p className="text-lg sm:text-2xl font-bold mb-4">$0</p>
             <ul className="text-sm sm:text-sm text-left mb-4 sm:mb-6 list-disc pl-4 ">
               <li>Access basic job recommendations</li>
-              <li>5 personalized job postings per month</li>
+              <li>1000 personalized job postings per month</li>
               <li>Basic support</li>
             </ul>
             <button className="bg-purple-700 text-white font-semibold px-4 py-2 sm:px-6 sm:py-2 rounded-lg hover:bg-purple-600  transition duration-500">
@@ -54,7 +54,7 @@ const Pricing = () => {
               <p className="text-lg sm:text-2xl font-bold mb-4">$10</p>
               <ul className="text-sm sm:text-sm text-left mb-4 sm:mb-6 list-disc pl-4">
                 <li>Advanced job recommendations</li>
-                <li>20 personalized job postings per month</li>
+                <li>5000 personalized job postings per month</li>
                 <li>Email and chat support</li>
               </ul>
               <button className="bg-purple-700 text-white font-semibold px-4 py-2 sm:px-6 sm:py-2 rounded-lg hover:bg-purple-600 transition duration-500">
@@ -73,16 +73,16 @@ const Pricing = () => {
             </h2>
             <p className="text-lg sm:text-2xl font-bold mb-4">$25</p>
             <ul className="text-sm sm:text-sm text-left mb-4 sm:mb-6 list-disc pl-4  text-black">
-              <li>5,000 job recommendations a month</li>
+              <li>10,000 job recommendations a month</li>
               <li>Access to exclusive job listings</li>
-              <li>Priority support with direct account manager</li>
+              <li>Other Key Features</li>
             </ul>
             <button className="bg-purple-700 text-white font-semibold px-4 py-2 sm:px-6 sm:py-2 rounded-lg hover:bg-purple-200 transition duration-500">
               Buy Now
             </button>
           </div>
           {/* Enterprise Plan */}
-          <div
+          {/* <div
             data-aos-offset="325"
             data-aos-delay="300"
             data-aos="fade-up"
@@ -99,7 +99,7 @@ const Pricing = () => {
             <button className="bg-purple-700 text-white font-semibold px-4 py-2 sm:px-6 sm:py-2 rounded-lg hover:bg-purple-600 transition duration-500">
               Contact Us
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

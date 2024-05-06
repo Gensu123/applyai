@@ -39,7 +39,7 @@ const Testimonials = () => {
               <img
                 src={item.imageUrl}
                 alt={item.name}
-                className="w-24 h-24 mb-3 rounded-full shadow-lg"
+                className="w-24 h-24 mb-3 rounded-full shadow-lg object-cover"
               />
               <h5 className="text-lg font-bold">{item.name}</h5>
               <p className="text-sm mb-2">{item.title}</p>
