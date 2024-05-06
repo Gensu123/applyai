@@ -1,7 +1,7 @@
 // HeroSection.js
 import React, { useEffect } from "react";
 import Image from "next/image";
-import centralImage from "../../../public/Hero.png"; // Ensure this path is correct
+import centralImage from "../../../public/Job-Recommendations.png"; // Ensure this path is correct
 import Tilt from "react-parallax-tilt";
 import AOS from "aos";
 import "aos/dist/aos.css";
