@@ -10,11 +10,8 @@ const Pricing = () => {
   });
 
   return (
-    <div className="pt-24 justify-center items-center">
-         <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_350px_at_10%_3200px,rgba(213,197,255,.25),transparent)]">
-        <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_350px_at_100%_3200px,rgba(186,255,236,.25),transparent)]">
-          <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_350px_at_100%_3800px,rgba(244,233,193,.25),transparent)]">
-            <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_350px_at_10%_3800px,rgba(194,244,230,.3),transparent)]"></div></div></div></div>
+    <div className="flex justify-center items-center p-32">
+         
       {" "}
       {/* Adjusted padding for mobile */}
       <div className="  md:px-[112px] mx-4 lg:mx-0">
@@ -23,7 +20,7 @@ const Pricing = () => {
           data-aos="fade-up">
           Pricing
         </h1>
-        <div className="grid gap-4 sm:gap-8 md:grid-cols-2">
+        <div className="grid gap-4 sm:gap-8 md:grid-cols-4">
           {" "}
           {/* Adjusted grid gap and columns */}
           {/* Explore Plan */}

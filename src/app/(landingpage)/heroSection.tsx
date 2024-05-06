@@ -29,7 +29,7 @@ const HeroSection = () => {
   return (
     <div className="flex px-4  pt-32 flex-col items-center justify-center text-black  md:p-20 lg:p-32 ">
       <h1
-        className="text-2xl md:text-3xl lg:text-5xl font-bold mb-3"
+        className="text-4xl md:text-3xl lg:text-5xl font-bold mb-3 text-center"
         data-aos="fade-up">
         Unlock Your Dream Job with
         {/* I ADDED A OVERFLOW:CLIP TO FIX THE OVERFLOWING ISSUE FOR THE PAGE SVG IMAGE. */}
@@ -66,7 +66,7 @@ const HeroSection = () => {
         data-waitlist_id="16500"
         data-widget_type="WIDGET_1"
         
-        
+
         
         >
        

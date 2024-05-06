@@ -18,17 +18,13 @@ const AboutTheApp = () => {
 
   return (
     <div className="container mx-auto pt-32 p-4 md:p-12 lg:p-44 flex flex-col lg:flex-row items-center justify-between">
-            <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_350px_at_10%_1200px,rgba(213,197,255,.25),transparent)]">
-        <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_350px_at_100%_1200px,rgba(186,255,236,.25),transparent)]">
-          <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_350px_at_100%_1800px,rgba(244,233,193,.25),transparent)]">
-            <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_350px_at_10%_1800px,rgba(194,244,230,.3),transparent)]"></div></div></div></div>
       <Tilt>
         <div
           className="flex flex-col items-center lg:flex-row lg:items-start"
           data-aos="fade-up">
           <div className="relative flex justify-center items-center mb-6 lg:mb-0">
             {/* Progress circle */}
-            <div className="relative  h-44 w-44 shadow-xl rounded-3xl bg-purple-50 lg:w-80 lg:h-80 z-20">
+            <div className="relative  h-44 w-44 shadow-xl rounded-3xl bg-grey-100 lg:w-80 lg:h-80 z-20">
               <svg className="  w-full h-full  " viewBox="0 0 100 100" data-aos='fade-up'>
                 <defs>
                   <linearGradient

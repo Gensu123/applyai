@@ -26,10 +26,7 @@ const Navbar = () => {
   return (
     <div className="relative min-h-screen    ">
       <div className="absolute inset-0 h-full w-full bg-purple bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:10rem_4rem] z-0"></div>
-      <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_350px_at_100%_300px,rgba(213,197,255,.25),transparent)]">
-        <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_350px_at_10%_200px,rgba(186,255,236,.25),transparent)]">
-          <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_350px_at_10%_800px,rgba(244,233,193,.5),transparent)]">
-            <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_350px_at_100%_800px,rgba(194,244,230,.25),transparent)]">
+      
               
               <div className="mx-auto h-18 px-4 sm:px-6 lg:px-8 z-10 fixed w-full bg-slate-50">
                 <nav className="flex justify-between items-center h-16 border-b border-slate-200">
@@ -91,7 +88,7 @@ const Navbar = () => {
                   // IT MADE A LOT OF UI SENSE TO MAKE THE NAV FOR PHONES TO BE 100VW, I ALSO ADDED ANIMATIONS TO THE NAV BAR FOR SMOOTH UI EXPERIENCE AND TO MATCH THE ALREADY EXISTING ANIMATION.
                   <div
                     className={`${
-                      isMenuOpen ? "slide-in-top" : "slide-in-bottom"
+                      isMenuOpen ? "slide-in-right" : "slide-in-right"
                     } cursor-pointer z-50 top-12 absolute right-0 mt-2 py-2 w-[100vw] bg-white rounded-lg shadow-xl md:hidden`}>
                     <Link
                       href="#Home"
@@ -133,11 +130,6 @@ const Navbar = () => {
                 )}
                 <div className="relative z-10"></div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div className="relative">
         <div id="Home">
           {" "}
@@ -149,17 +141,18 @@ const Navbar = () => {
         <div id="AppFeatures">
           <AppFeatures />
         </div>
-        <div id="Pricing">
+        {/* <div id="Pricing">
           <Pricing />
-        </div>
-        <div id="Testimonials">
+        </div> */}
+        {/* <div id="Testimonials">
           <Testimonials />
-        </div>
+        </div> */}
         <div id="Faq">
           <Faq />
         </div>
       </div>
     </div>
+
   );
 };
 
