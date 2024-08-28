@@ -130,9 +130,9 @@ const Navbar = () => {
         <div id="Pricing">
           <Pricing />
         </div>
-        {/* <div id="Testimonials">
-          <Testimonials />
-        </div> */}
+        <div id="Testimonials">
+            <Testimonials />
+        </div>
         <div id="Faq">
           <Faq />
         </div>
